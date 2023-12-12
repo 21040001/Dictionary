@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About_us_uz">
+
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#00B0FF">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:scaleType="fitXY"
+                android:onClick="en"
+                android:background="#00B0FF"
+                android:src="@drawable/en"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="25dp"
+
+                android:layout_height="22dp"
+                android:layout_marginStart="20dp"
+                android:background="#00B0FF"
+                android:onClick="aboutuz_back"
+                android:src="@drawable/baseline_arrow_back_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"></ImageButton>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Back"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageButton5"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </Toolbar>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:src="@drawable/itimus"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        app:shapeAppearance="@style/roundedImageView"
+        >
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ITIMUS Akademiyasi 2022-yilda Davronbek Abdurazzokov tomonidan yoshlarga zamonaviy texnologiyalar yo‘nalishlarini o‘rganishda yordamchi bo‘lish maqsadida tashkil etilgan."
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="275dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textStyle="bold"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:backgroundTint="#00B0FF"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:onClick="instagramuz"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#00B0FF"
+                android:scaleType="fitXY"
+                android:src="@drawable/inst"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:backgroundTint="#00B0FF"
+                android:scaleType="fitXY"
+                android:onClick="telegramuz"
+                android:src="@drawable/telegram"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#00B0FF"
+                android:scaleType="fitXY"
+                android:onClick="youuz"
+                android:src="@drawable/youtube"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageButton2"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

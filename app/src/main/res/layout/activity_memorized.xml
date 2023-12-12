@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".memorized"
+    android:background="#3D5AFE">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3D5AFE">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:onClick="memorized_back"
+            android:background="#3D5AFE"
+            android:src="@drawable/baseline_arrow_back_24"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List of memorized words"
+        android:layout_marginTop="60dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"/>
+
+    <ListView
+        android:id="@+id/listmemo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#00B0FF"
+        android:layout_marginBottom="75dp"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        />
+
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginHorizontal="5dp">
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_nvgt"
+            android:layout_height="wrap_content"
+            app:menu="@menu/menu2"
+            tools:ignore="MissingConstraints"
+            >
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/like"
+                android:backgroundTint="#D81B60"
+
+                android:layout_gravity="center_horizontal|center_vertical"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

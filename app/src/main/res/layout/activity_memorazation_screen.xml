@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#43A047"
+    tools:context=".memorazation_screen">
+
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#43A047">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:onClick="memorazation_back"
+            android:background="#43A047"
+            android:src="@drawable/baseline_arrow_back_24"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </Toolbar>
+
+ <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="100dp"
+     android:layout_marginRight="20dp"
+     android:layout_marginLeft="20dp"
+     app:cardCornerRadius="25dp"
+     android:backgroundTint="#651FFF"
+     >
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <TextView
+             android:id="@+id/boshliq"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="davron"
+             android:textColor="@color/black"
+
+             android:textSize="25dp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"></TextView>
+     </androidx.constraintlayout.widget.ConstraintLayout>
+ </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/a_var"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:onClick="var_a"
+        android:layout_marginTop="220dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="50dp"
+        app:cardCornerRadius="25dp"
+
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/variant1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="davron"
+            android:textColor="@color/black"
+
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/b_var"
+        android:layout_height="80dp"
+        android:onClick="var_b"
+                android:layout_marginTop="340dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="50dp"
+        app:cardCornerRadius="25dp"
+
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/variant2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="davron"
+                android:textColor="@color/black"
+
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="50dp"
+        app:cardCornerRadius="25dp"
+        android:onClick="var_c"
+        android:id="@+id/c_var"
+
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/variant3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="davron"
+                android:textColor="@color/black"
+
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#6A1B9A"
+        android:layout_marginTop="570dp"
+        android:layout_marginLeft="205dp"
+        android:layout_marginRight="45dp"
+        android:text="Next"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="nexteng"
+        android:backgroundTint="#6A1B9A"
+        android:layout_marginTop="570dp"
+        android:layout_marginLeft="205dp"
+        android:layout_marginRight="45dp"
+        android:text="Next"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:onClick="memo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#6A1B9A"
+        android:layout_marginTop="570dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="225dp"
+        android:text="Memorized"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginHorizontal="5dp">
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_nvgt"
+            android:layout_height="wrap_content"
+            app:menu="@menu/menu2"
+            tools:ignore="MissingConstraints"
+            >
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/like"
+                android:backgroundTint="#D81B60"
+                android:onClick="memorztn_like"
+                android:layout_gravity="center_horizontal|center_vertical"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

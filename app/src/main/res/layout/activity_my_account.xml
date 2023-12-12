@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".My_account">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#039BE5"
+
+        tools:ignore="MissingConstraints">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#039BE5"
+            android:onClick="back_acc"
+            android:src="@drawable/baseline_arrow_back_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Back"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#070113"/>
+
+    </Toolbar>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:src="@drawable/baseline_account_circle_24"
+        android:layout_marginTop="80dp"
+        android:onClick="rasmqosh"
+        android:id="@+id/resm"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        app:shapeAppearance="@style/roundedImageView"
+        >
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your email adress :"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="235dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/email12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text@gmail.com"
+        android:layout_marginTop="255dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your name:"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/ism12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daronbek"
+        android:layout_marginTop="310dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Surname:"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginTop="345dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/familiya12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abdurazzokov"
+        android:layout_marginTop="365dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of words in your dictionary :"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginTop="395dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/soni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="------"
+        android:layout_marginTop="415dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of memorized words :"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginTop="445dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/soni12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="------"
+        android:layout_marginTop="465dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
